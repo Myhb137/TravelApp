@@ -1,0 +1,565 @@
+{
+  "travelPackages": [
+    {
+      "id": "maldives-paradise-escape",
+      "title": "Maldives Paradise Escape",
+      "location": "Maldives",
+      "rating": 4.7,
+      "totalReviews": 245,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800",
+          "alt": "Maldives beach resort with overwater bungalows",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 300000,
+        "currency": "DZD",
+        "pricePerPerson": 42857,
+        "displayTotal": "300,000 dz",
+        "displayPerPerson": "42,857 dz"
+      },
+      "details": {
+        "duration": "7 Days",
+        "places": 8,
+        "type": "Beach"
+      },
+      "description": "Experience the ultimate tropical getaway in the stunning Maldives. This all-inclusive package offers pristine beaches, crystal-clear waters, and world-class accommodations. Enjoy snorkeling, diving, spa treatments, and more.",
+      "amenities": [
+        {
+          "icon": "wifi",
+          "name": "Free WiFi"
+        },
+        {
+          "icon": "breakfast",
+          "name": "Breakfast"
+        },
+        {
+          "icon": "restaurant",
+          "name": "Restaurant"
+        },
+        {
+          "icon": "beach",
+          "name": "Beach Access"
+        },
+        {
+          "icon": "air-conditioning",
+          "name": "Air Conditioning"
+        },
+        {
+          "icon": "pool",
+          "name": "Pool"
+        }
+      ],
+      "amenitiesFlags": {
+        "wifi": true,
+        "breakfast": true,
+        "restaurant": true,
+        "beachAccess": true,
+        "airConditioning": true,
+        "pool": true
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Welcome",
+          "description": "Airport transfer and resort check-in"
+        },
+        {
+          "day": 2,
+          "title": "Island Exploration",
+          "description": "Guided tour and water sports"
+        },
+        {
+          "day": 3,
+          "title": "Snorkeling Adventure",
+          "description": "Visit coral reefs and marine life"
+        },
+        {
+          "day": 4,
+          "title": "Spa & Relaxation",
+          "description": "Full day wellness experience"
+        },
+        {
+          "day": 5,
+          "title": "Sunset Cruise",
+          "description": "Romantic dinner on the ocean"
+        },
+        {
+          "day": 6,
+          "title": "Free Day",
+          "description": "Explore at your own pace"
+        },
+        {
+          "day": 7,
+          "title": "Departure",
+          "description": "Check-out and airport transfer"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "author": "Sarah M.",
+          "rating": 5,
+          "comment": "Amazing experience! The resort was beautiful and staff very friendly.",
+          "date": "2024-11-15"
+        },
+        {
+          "id": 2,
+          "author": "John D.",
+          "rating": 5,
+          "comment": "Perfect honeymoon destination. Highly recommend!",
+          "date": "2024-11-10"
+        }
+      ],
+      "tags": ["Beach", "7 Days"],
+      "available": true
+    },
+    {
+      "id": "swiss-alps-adventure",
+      "title": "Swiss Alps Mountain Retreat",
+      "location": "Switzerland",
+      "rating": 4.9,
+      "totalReviews": 312,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800",
+          "alt": "Swiss Alps mountain peaks with snow",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 450000,
+        "currency": "DZD",
+        "pricePerPerson": 64286,
+        "displayTotal": "450,000 dz",
+        "displayPerPerson": "64,286 dz"
+      },
+      "details": {
+        "duration": "10 Days",
+        "places": 12,
+        "type": "Mountain"
+      },
+      "description": "Discover the majestic Swiss Alps with this unforgettable mountain adventure. Experience world-class skiing, charming alpine villages, scenic train rides, and breathtaking mountain views. Perfect for winter sports enthusiasts.",
+      "amenities": [
+        {
+          "icon": "wifi",
+          "name": "Free WiFi"
+        },
+        {
+          "icon": "breakfast",
+          "name": "Breakfast"
+        },
+        {
+          "icon": "ski",
+          "name": "Ski Equipment"
+        },
+        {
+          "icon": "spa",
+          "name": "Mountain Spa"
+        },
+        {
+          "icon": "heating",
+          "name": "Heating"
+        },
+        {
+          "icon": "transport",
+          "name": "Cable Car Pass"
+        }
+      ],
+        "amenitiesFlags": {
+          "wifi": true,
+          "breakfast": true,
+          "skiEquipment": true,
+          "spa": true,
+          "heating": true,
+          "transport": true
+        },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Zurich",
+          "description": "Airport pickup and transfer to alpine resort"
+        },
+        {
+          "day": 2,
+          "title": "Ski Lessons",
+          "description": "Professional ski instruction for all levels"
+        },
+        {
+          "day": 3,
+          "title": "Mountain Peak Tour",
+          "description": "Cable car to Jungfraujoch - Top of Europe"
+        },
+        {
+          "day": 4,
+          "title": "Free Skiing Day",
+          "description": "Explore the slopes at your own pace"
+        },
+        {
+          "day": 5,
+          "title": "Village Tour",
+          "description": "Visit Grindelwald and Interlaken"
+        },
+        {
+          "day": 6,
+          "title": "Glacier Walk",
+          "description": "Guided glacier hiking experience"
+        },
+        {
+          "day": 7,
+          "title": "Scenic Train Ride",
+          "description": "Glacier Express panoramic journey"
+        },
+        {
+          "day": 8,
+          "title": "Spa & Wellness",
+          "description": "Mountain spa and thermal baths"
+        },
+        {
+          "day": 9,
+          "title": "Final Ski Day",
+          "description": "Last day on the slopes"
+        },
+        {
+          "day": 10,
+          "title": "Departure",
+          "description": "Transfer to Zurich airport"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "author": "Michael K.",
+          "rating": 5,
+          "comment": "Incredible skiing and stunning views. Best winter vacation ever!",
+          "date": "2024-12-01"
+        },
+        {
+          "id": 2,
+          "author": "Emma L.",
+          "rating": 5,
+          "comment": "The alpine villages were magical. Highly organized tour.",
+          "date": "2024-11-28"
+        }
+      ],
+      "tags": ["Mountain", "10 Days", "Winter"],
+      "available": true
+    },
+    {
+      "id": "paris-romantic-getaway",
+      "title": "Paris Romantic Getaway",
+      "location": "Paris, France",
+      "rating": 4.8,
+      "totalReviews": 428,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800",
+          "alt": "Eiffel Tower at sunset",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 180000,
+        "currency": "DZD",
+        "pricePerPerson": 90000,
+        "displayTotal": "180,000 dz",
+        "displayPerPerson": "90,000 dz"
+      },
+      "details": {
+        "duration": "5 Days",
+        "places": 2,
+        "type": "City"
+      },
+      "description": "Fall in love with the City of Light on this romantic Parisian escape. Enjoy intimate dinners, iconic landmarks, world-class museums, charming cafes, and sunset strolls along the Seine. Perfect for couples.",
+      "amenities": [
+        {
+          "icon": "wifi",
+          "name": "Free WiFi"
+        },
+        {
+          "icon": "breakfast",
+          "name": "Continental Breakfast"
+        },
+        {
+          "icon": "restaurant",
+          "name": "Fine Dining"
+        },
+        {
+          "icon": "transport",
+          "name": "Metro Pass"
+        },
+        {
+          "icon": "concierge",
+          "name": "Concierge Service"
+        },
+        {
+          "icon": "champagne",
+          "name": "Welcome Champagne"
+        }
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Eiffel Tower",
+          "description": "Hotel check-in and evening Eiffel Tower visit"
+        },
+        {
+          "day": 2,
+          "title": "Louvre & Latin Quarter",
+          "description": "Museum tour and lunch in historic quarter"
+        },
+        {
+          "day": 3,
+          "title": "Versailles Palace",
+          "description": "Full day trip to Palace of Versailles"
+        },
+        {
+          "day": 4,
+          "title": "Montmartre & Seine Cruise",
+          "description": "Artist district tour and romantic dinner cruise"
+        },
+        {
+          "day": 5,
+          "title": "Shopping & Departure",
+          "description": "Champs-Élysées shopping and airport transfer"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "author": "Sophie R.",
+          "rating": 5,
+          "comment": "Perfect honeymoon! Every moment was magical and romantic.",
+          "date": "2024-11-20"
+        },
+        {
+          "id": 2,
+          "author": "David P.",
+          "rating": 4,
+          "comment": "Beautiful city, great organization. The Seine cruise was unforgettable.",
+          "date": "2024-11-18"
+        }
+      ],
+      "tags": ["City", "5 Days", "Romantic"],
+      "available": true
+    },
+    {
+      "id": "dubai-luxury-experience",
+      "title": "Dubai Luxury Experience",
+      "location": "Dubai, UAE",
+      "rating": 4.6,
+      "totalReviews": 189,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
+          "alt": "Dubai skyline with Burj Khalifa",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 520000,
+        "currency": "DZD",
+        "pricePerPerson": 130000,
+        "displayTotal": "520,000 dz",
+        "displayPerPerson": "130,000 dz"
+      },
+      "details": {
+        "duration": "6 Days",
+        "places": 6,
+        "type": "City"
+      },
+      "description": "Experience ultimate luxury in the dazzling city of Dubai. Stay in 5-star hotels, visit the world's tallest building, shop in luxury malls, enjoy desert safaris, and indulge in fine dining with stunning views.",
+      "amenities": [
+        {
+          "icon": "wifi",
+          "name": "Free WiFi"
+        },
+        {
+          "icon": "breakfast",
+          "name": "Luxury Breakfast"
+        },
+        {
+          "icon": "pool",
+          "name": "Infinity Pool"
+        },
+        {
+          "icon": "spa",
+          "name": "Premium Spa"
+        },
+        {
+          "icon": "transport",
+          "name": "Private Transfers"
+        },
+        {
+          "icon": "air-conditioning",
+          "name": "Air Conditioning"
+        }
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Burj Khalifa",
+          "description": "VIP hotel check-in and sunset at Burj Khalifa"
+        },
+        {
+          "day": 2,
+          "title": "Desert Safari",
+          "description": "Dune bashing, camel riding, and Bedouin dinner"
+        },
+        {
+          "day": 3,
+          "title": "Palm Jumeirah & Beach",
+          "description": "Visit Atlantis and private beach relaxation"
+        },
+        {
+          "day": 4,
+          "title": "Shopping & Dubai Mall",
+          "description": "Luxury shopping and Dubai Aquarium visit"
+        },
+        {
+          "day": 5,
+          "title": "Abu Dhabi Day Trip",
+          "description": "Sheikh Zayed Mosque and Louvre Abu Dhabi"
+        },
+        {
+          "day": 6,
+          "title": "Marina & Departure",
+          "description": "Morning yacht cruise and airport transfer"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "author": "Ahmed T.",
+          "rating": 5,
+          "comment": "Absolutely luxurious! Every detail was perfect.",
+          "date": "2024-12-05"
+        },
+        {
+          "id": 2,
+          "author": "Lisa W.",
+          "rating": 4,
+          "comment": "Amazing experience. The desert safari was a highlight!",
+          "date": "2024-12-02"
+        }
+      ],
+      "tags": ["City", "6 Days", "Luxury"],
+      "available": true
+    },
+    {
+      "id": "bali-cultural-journey",
+      "title": "Bali Cultural Journey",
+      "location": "Bali, Indonesia",
+      "rating": 4.5,
+      "totalReviews": 267,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
+          "alt": "Bali rice terraces and temples",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 220000,
+        "currency": "DZD",
+        "pricePerPerson": 55000,
+        "displayTotal": "220,000 dz",
+        "displayPerPerson": "55,000 dz"
+      },
+      "details": {
+        "duration": "8 Days",
+        "places": 10,
+        "type": "Cultural"
+      },
+      "description": "Immerse yourself in Bali's rich culture and natural beauty. Visit ancient temples, explore rice terraces, participate in traditional ceremonies, enjoy Balinese cuisine, and relax on pristine beaches.",
+      "amenities": [
+        {
+          "icon": "wifi",
+          "name": "Free WiFi"
+        },
+        {
+          "icon": "breakfast",
+          "name": "Balinese Breakfast"
+        },
+        {
+          "icon": "pool",
+          "name": "Tropical Pool"
+        },
+        {
+          "icon": "spa",
+          "name": "Traditional Spa"
+        },
+        {
+          "icon": "yoga",
+          "name": "Yoga Classes"
+        },
+        {
+          "icon": "cooking",
+          "name": "Cooking Class"
+        }
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Ubud",
+          "description": "Transfer to boutique resort in cultural heart"
+        },
+        {
+          "day": 2,
+          "title": "Temple Tour",
+          "description": "Visit Tanah Lot and Uluwatu temples"
+        },
+        {
+          "day": 3,
+          "title": "Rice Terrace Trek",
+          "description": "Guided walk through Tegallalang terraces"
+        },
+        {
+          "day": 4,
+          "title": "Cooking Class",
+          "description": "Learn traditional Balinese cuisine"
+        },
+        {
+          "day": 5,
+          "title": "Waterfall Adventure",
+          "description": "Visit sacred waterfalls and jungle"
+        },
+        {
+          "day": 6,
+          "title": "Beach Day in Seminyak",
+          "description": "Relax on beautiful beaches"
+        },
+        {
+          "day": 7,
+          "title": "Traditional Ceremony",
+          "description": "Participate in Balinese blessing ritual"
+        },
+        {
+          "day": 8,
+          "title": "Departure",
+          "description": "Morning spa treatment and airport transfer"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "author": "Rachel H.",
+          "rating": 5,
+          "comment": "Life-changing experience! The culture is so rich and beautiful.",
+          "date": "2024-11-25"
+        },
+        {
+          "id": 2,
+          "author": "Tom S.",
+          "rating": 4,
+          "comment": "Great balance of activities and relaxation. Loved the cooking class!",
+          "date": "2024-11-22"
+        }
+      ],
+      "tags": ["Cultural", "8 Days", "Beach"],
+      "available": true
+    }
+  ]
+}
