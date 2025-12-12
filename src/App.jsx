@@ -5,6 +5,8 @@ import OfferDetails from "./components/OfferDetails"
 import TripOfferPage from "./components/TripOfferPage"
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined"
 import "./App.css"
+import Profile from "./components/Profile"
+
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -38,6 +40,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/offer/:id" element={<OfferDetails />} />
           <Route path="/trips" element={<TripOfferPage />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
 
