@@ -6,6 +6,7 @@ import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 import HikingOutlinedIcon from '@mui/icons-material/HikingOutlined';
 import TripCard from './TripCard';
 import useFetchPackages from '../hooks/useFetchPackages';
+import { Link } from 'react-router-dom';
 
 const TripOfferPage = () => {
   const { packages = [] } = useFetchPackages()
@@ -39,8 +40,15 @@ const TripOfferPage = () => {
         </div>
 
         {/* Trip cards */}
-        <div className='w-full px-4 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-20'>
-          {packages.length > 0 ? (
+        
+        <div className='w-full px-4  pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-5'>
+          <div className='w-full  text-start  mx-auto flex justify-between items-center mt-3'>
+            <h2 className='text-3xl w-full font-semibold'>
+              Latest Trips
+            </h2>
+            <Link className='text-blue-700 w-full p-1 text-end  font-meduim text-md'>See All</Link>
+          </div>
+          {packages.length > 0? (
             packages.map((pkg) => (
               <TripCard key={pkg.id} pkg={pkg} />
             ))
