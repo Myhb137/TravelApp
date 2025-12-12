@@ -24,42 +24,51 @@ const TripOfferPage = () => {
 
         <div className='flex pl-1 mx-auto gap-5 px-4'>
           <button className='border-2 rounded-2xl flex flex-col items-center gap-2 p-3'>
-            <AutoFixHighOutlinedIcon sx={{ fontSize: 60, color: '#0046A8' }} className='p-3' />
+            <AutoFixHighOutlinedIcon sx={{ fontSize: 60, color: '#0046A8' }} className='p-3 border-3 rounded-[100%] ' />
             <p className='text-md'>Custom Trips</p>
           </button>
 
           <button className='border-2 rounded-2xl flex flex-col items-center gap-2 p-3'>
-            <StarBorderOutlinedIcon sx={{ fontSize: 60, color: '#0046A8' }} className='p-3' />
+            <StarBorderOutlinedIcon sx={{ fontSize: 60, color: '#0046A8' }} className='p-3 border-3 rounded-[100%]' />
             <p className='text-md'>Special Trips</p>
           </button>
 
           <button className='border-2 rounded-2xl flex flex-col items-center gap-2 p-3'>
-            <HikingOutlinedIcon sx={{ fontSize: 60, color: '#0046A8' }} className='p-3' />
+            <HikingOutlinedIcon sx={{ fontSize: 60, color: '#0046A8' }} className='p-3 border-3 rounded-[100%]' />
             <p className='text-md'>Activities</p>
           </button>
         </div>
 
         {/* Trip cards */}
         
-        <div className='w-full px-4  pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-5'>
-          <div className='w-full  text-start  mx-auto flex justify-between items-center mt-3'>
-            <h2 className='text-3xl w-full font-semibold'>
+        <div className='w-screen px-1 pb-30 mt-5'>
+          <div className='w-full flex px-2 justify-between items-center mb-4'>
+            <h2 className='text-3xl font-semibold'>
               Latest Trips
             </h2>
-            <Link className='text-blue-700 w-full p-1 text-end  font-meduim text-md'>See All</Link>
+            <Link className='text-blue-700 font-medium text-md'>See All</Link>
           </div>
-          {packages.length > 0? (
-            packages.map((pkg) => (
-              <TripCard key={pkg.id} pkg={pkg} />
-            ))
-          ) : (
-            <p className='text-center w-full text-gray-600 col-span-full'>
-              Loading trips...
-            </p>
-          )}
+          
+          <div className='overflow-x-auto w-full pr-2 '>
+            <div className='flex w-full gap-4 px-2 pr-1 '>
+              {packages.length > 0 ? (
+                packages.map((pkg) => (
+                  <div key={pkg.id} className='flex-shrink-0 w-64 h-fit'>
+                    <TripCard pkg={pkg}/>
+                  </div>
+                ))
+              ) : (
+                <p className='text-center w-full text-gray-600'>
+                  Loading trips...
+                </p>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+
+          </div>
+        </div>
+
   )
 }
 

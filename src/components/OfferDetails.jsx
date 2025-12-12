@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect, useRef } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import useFetchPackages from '../hooks/useFetchPackages'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
@@ -24,6 +24,7 @@ import DirectionsCarIcon from '@mui/icons-material/DirectionsCar'
 
 const OfferDetails = () => {
   const { id } = useParams()
+  const navigate = useNavigate()
   const { packages, isLoading } = useFetchPackages()
 
   const pkg = useMemo(() => {
@@ -83,9 +84,12 @@ const OfferDetails = () => {
 
         {/* Back Button */}
         <div className='absolute top-4 left-4 z-20'>
-          <Link to='/' className='w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow'>
+          <button 
+            onClick={() => navigate(-1)}
+            className='w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow'
+          >
             <ArrowBackIosNewIcon sx={{ fontSize: 20, color : 'gray' }} />
-          </Link>
+          </button>
         </div>
 
         {/* Favorite Button (Icons increased size) */}
@@ -110,7 +114,7 @@ const OfferDetails = () => {
       <div className='-mt-8 relative mx-auto z-10 px-3 py-5 bg-white rounded-2xl text-black'>
         {/* Title, Rating, Location */}
         <div className='flex items-center justify-between '>
-          <h1 className=' text-xl font-semibold text-start'>{title}</h1>    
+          <h1 className=' text-xl font-semibold text-start'>{title}</h1>    
           <p>
           <span className='text-xl p-2 text-yellow-500'>{rating}★</span>
           </p>
@@ -119,7 +123,7 @@ const OfferDetails = () => {
           <div className='flex items-center gap-2 mt-2'>
             <LocationOnIcon sx={{ fontSize: 20, color: 'gray' }} />
             <span className='text-gray-600 text-sm'>{location}</span>
-          </div>    
+          </div>    
         </div>
         
         {/* Details tiles for duration, places, type (Icons increased size) */}
