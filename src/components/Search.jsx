@@ -4,7 +4,7 @@ import TuneIcon from '@mui/icons-material/Tune'
 
 const Search = ({ value = '', onChange = () => {}, placeholder = 'Search destinations, locations...', onFilterClick = () => {} }) => {
   return (
-    <div className='w-90 mx-auto mt-6 mb-6'>
+    <div className='w-full overflow-x-hidden  mx-auto mt-6 mb-7 p-1 overflow-hidden'>
       <label htmlFor='site-search' className='sr-only'>Search packages</label>
       <div className='bg-white border border-gray-200  rounded-4xl shadow-md px-3 py-3 flex items-center gap-3'>
         <div className='text-gray-500 flex  '>

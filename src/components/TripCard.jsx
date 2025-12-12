@@ -4,8 +4,8 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 
 const TripCard = ({ pkg }) => {
-  // Favorite state persisted in localStorage by package id
   const favKey = 'travelapp:favorites'
+
   const [favorite, setFavorite] = useState(() => {
     try {
       const raw = localStorage.getItem(favKey)
@@ -18,7 +18,7 @@ const TripCard = ({ pkg }) => {
 
   if (!pkg) return null
 
-  const image = pkg.images && pkg.images.length ? pkg.images[0].url : ''
+  const image = pkg.images?.[0]?.url || ''
   const title = pkg.title || 'Untitled'
   const location = pkg.location || ''
   const price = pkg.pricing?.displayTotal || 'N/A'
@@ -27,11 +27,11 @@ const TripCard = ({ pkg }) => {
   const type = pkg.details?.type || ''
   const details = [duration, groupSize, type].filter(Boolean).join(' | ')
 
-
   const toggleFavorite = () => {
     try {
       const raw = localStorage.getItem(favKey)
       const map = raw ? JSON.parse(raw) : {}
+
       if (map[pkg.id]) {
         delete map[pkg.id]
         setFavorite(false)
@@ -39,48 +39,61 @@ const TripCard = ({ pkg }) => {
         map[pkg.id] = true
         setFavorite(true)
       }
+
       localStorage.setItem(favKey, JSON.stringify(map))
     } catch {
-      // ignore
       setFavorite(!favorite)
     }
   }
 
   return (
-    <div className=' rounded-4xl  mx-auto shadow-md w-90 overflow-hidden border border-gray-200'>
-      <div className='relative'>
+    <div className="rounded-3xl w-full bg-white mx-auto shadow-md overflow-hidden border border-gray-200">
+      <div className="relative">
+
         {image && (
-          <Link to={`/offer/${pkg.id}`} className='block'>
-            <img src={image} alt={pkg.images[0]?.alt || title} className='w-full h-60 object-cover' />
+          <Link to={`/offer/${pkg.id}`} className="block">
+            <img
+              src={image}
+              alt={pkg.images?.[0]?.alt || title}
+              className="w-full h-60 object-cover block"
+            />
           </Link>
         )}
 
-        {/* Favorite button */}
+        {/* Favorite Button */}
         <button
           onClick={toggleFavorite}
           aria-pressed={favorite}
           aria-label={favorite ? 'Remove from favorites' : 'Add to favorites'}
-          className='absolute top-3 right-3 w-10 h-10 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow-sm hover:scale-105 transition-transform'
+          className="absolute top-3 right-3 w-10 h-10 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow-sm hover:scale-105 transition-transform"
         >
-          {favorite ? <FavoriteIcon sx={{ color: '#ef4444' }} /> : <FavoriteBorderIcon sx={{ color: '#374151' }} />}
+          {favorite ? (
+            <FavoriteIcon sx={{ color: '#ef4444' }} />
+          ) : (
+            <FavoriteBorderIcon sx={{ color: '#374151' }} />
+          )}
         </button>
       </div>
 
-      <div className='p-4'>
-        <h3 className='text-lg font-semibold text-gray-900'>
-          <Link to={`/offer/${pkg.id}`} className='hover:underline'>
+      <div className="p-4">
+        <h3 className="text-lg font-semibold text-gray-900">
+          <Link to={`/offer/${pkg.id}`} className="hover:underline">
             {title}
           </Link>
         </h3>
-        <p className='text-sm text-gray-600'>{location}</p>
 
-        {details && <p className='text-xs text-gray-500 mt-2'>{details}</p>}
+        <p className="text-sm text-gray-600">{location}</p>
 
-        <div className='mt-3 flex items-center justify-between'>
-          <span className='text-sm font-bold text-gray-900'>${price}</span>
-          <span className='text-sm text-yellow-500'>{pkg.rating ? `${pkg.rating} ★` : 'N/A'}</span>
+        {details && (
+          <p className="text-xs text-gray-500 mt-2">{details}</p>
+        )}
+
+        <div className="mt-3 flex items-center justify-between">
+          <span className="text-sm font-bold text-gray-900">${price}</span>
+          <span className="text-sm text-yellow-500">
+            {pkg.rating ? `${pkg.rating} ★` : 'N/A'}
+          </span>
         </div>
-        
       </div>
     </div>
   )

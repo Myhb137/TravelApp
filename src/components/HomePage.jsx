@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react'
-import HomeNav from './HomeNav'
 import TripCard from './TripCard'
 import useFetchPackages from '../hooks/useFetchPackages'
 import Search from './Search'
@@ -22,11 +21,11 @@ const HomePage = () => {
   }, [packages, query])
 
   return (
-    <div className='flex flex-col  h-screen w-screen'>
-      <HomeNav />
+    <div className='flex flex-col  overflow-x-hidden h-screen w-screen'>
+      
       <Navbar></Navbar>
 
-      <main className='mt-15 p-4 overflow-y-auto mb-26 flex-1'>
+      <main className='mt- p-4 overflow-y-auto mb-26 flex-1'>
         <Search value={query} onChange={setQuery} placeholder='Search destinations, locations...'/>
 
         {isLoading && <div className='text-center py-8'>Loading packages…</div>}
