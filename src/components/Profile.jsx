@@ -105,11 +105,11 @@ const Profile = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="w-full px-4 py-4 mt-6 bg-white">
-  <div className="flex gap-4 justify-center items-stretch">
-    <div className="text-center border-b-2 flex flex-col gap-3 border-gray-300 rounded-4xl  max-w-xs px-3 py-7 bg-white drop-shadow-2xl">
+        <div className="w-full px-4 py-4 mt-10 ">
+      <div className="flex gap-4 justify-center items-stretch">
+    <div className="text-center border-b-2 flex flex-col gap-3 border-gray-300 rounded-4xl  max-w-xs px-3 py-7  bg-white drop-shadow-2xl ">
       <div className="text-lg text-gray-600 flex flex-col items-center gap-2">
-        <DoneIcon sx={{color : '#ffff',fontSize:55}} className='border-2 p-2 rounded-full bg-green-600'/>
+        <DoneIcon sx={{color : '#ffff',fontSize:55}} className='border-2 p-2 rounded-full  bg-green-600'/>
         Completed
       </div>
       <div className="text-3xl font-bold text-green-600">{stats.completed}</div>
@@ -133,7 +133,7 @@ const Profile = () => {
         
 
         {/* History Section */}
-        <div className=" px-2 pb-6 mt-6 mb-10 flex flex-col gap-3">
+        <div className=" px-2 pb-6 mt-10 mb-10 flex flex-col gap-3">
           <div className='flex justify-between w-full '>
           <h2 className="text-2xl text-black text-start font-semibold mb-4">Trip History</h2>
           <Link className='text-blue-700  text-end font-medium text-lg'>See All</Link>
