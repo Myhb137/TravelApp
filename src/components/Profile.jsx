@@ -134,7 +134,7 @@ const Profile = () => {
 
         {/* History Section */}
         <div className=" px-2 pb-6 mt-6 mb-10 flex flex-col gap-3">
-          <div className='flex justify-between w-full border-2'>
+          <div className='flex justify-between w-full '>
           <h2 className="text-2xl text-black text-start font-semibold mb-4">Trip History</h2>
           <Link className='text-blue-700  text-end font-medium text-lg'>See All</Link>
           </div>
