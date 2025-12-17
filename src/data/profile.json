@@ -1,0 +1,48 @@
+{
+  "profile": {
+    "id": "user_001",
+    "fullName": "Mohamed Yahia Benaissa",
+    "avatar": {
+      "url": "https://www.freepik.com/free-photo/handsome-unshaven-european-man-has-serious-self-confident-expression-wears-glasses_10547203.htm#fromView=search&page=1&position=1&uuid=5524e3ad-2c22-415e-8d58-fc667a9a6fae&query=portrait",
+      "alt": "User profile picture"
+    },
+    "email": "mohamedyahiabenaissa@example.com",
+    "passportId": "AB123456789",
+    "birthday": "2003-07-13"
+  },
+
+  "stats": {
+    "totalTrips": 5,
+    "completed": 3,
+    "upcoming": 2,
+    "saved": 7
+  },
+
+  "history": [
+    {
+      "id": "trip_090",
+      "title": "City Break Experience",
+      "location": "Dubai",
+      "date": "2026-01-10",
+      "status": "upcoming"
+    },
+    {
+      "id": "trip_091",
+      "title": "Desert Safari Tour",
+      "location": "Morocco",
+      "date": "2025-12-05",
+      "status": "completed"
+    },
+    {
+      "id": "trip_092",
+      "title": "Cultural Heritage Trip",
+      "location": "Egypt",
+      "date": "2025-11-18",
+      "status": "canceled"
+    }
+  ],
+
+  "actions": {
+    "canEditProfile": true
+  }
+}
