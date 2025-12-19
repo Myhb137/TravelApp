@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import FavoriteIcon from '@mui/icons-material/Favorite'
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 const TripCard = ({ pkg }) => {
   const favKey = 'travelapp:favorites'
@@ -47,7 +47,7 @@ const TripCard = ({ pkg }) => {
   }
 
   return (
-    <div className="rounded-3xl w-full bg-white mx-auto shadow-md overflow-hidden border border-gray-200">
+    <div className="rounded-3xl w-full mb-3 bg-white mx-auto shadow-md overflow-hidden border border-gray-200">
       <div className="relative">
 
         {image && (
@@ -68,9 +68,9 @@ const TripCard = ({ pkg }) => {
           className="absolute top-3 right-3 w-10 h-10 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow-sm hover:scale-105 transition-transform"
         >
           {favorite ? (
-            <FavoriteIcon sx={{ color: '#ef4444' }} />
+            <BookmarkIcon sx={{ color: '#3b82f6' }} />
           ) : (
-            <FavoriteBorderIcon sx={{ color: '#374151' }} />
+            <BookmarkIcon sx={{ color: '#6b7280' }} />
           )}
         </button>
       </div>
@@ -89,7 +89,7 @@ const TripCard = ({ pkg }) => {
         )}
 
         <div className="mt-3 flex items-center justify-between">
-          <span className="text-sm font-bold text-gray-900">${price}</span>
+          <span className="text-sm font-bold text-gray-900">{price}</span>
           <span className="text-sm text-yellow-500">
             {pkg.rating ? `${pkg.rating} ★` : 'N/A'}
           </span>

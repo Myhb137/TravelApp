@@ -1,9 +1,10 @@
-import { useMemo, useState, useEffect, useRef } from 'react'
+import { useMemo, useState,  useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import useFetchPackages from '../hooks/useFetchPackages'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import FavoriteIcon from '@mui/icons-material/Favorite'
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+
 import StarIcon from '@mui/icons-material/Star'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 // Icons for Details Tiles
@@ -83,7 +84,7 @@ const OfferDetails = () => {
         </div>
 
         {/* Back Button */}
-        <div className='absolute top-4 left-4 z-20'>
+        <div className='absolute top-10 left-4 z-20'>
           <button 
             onClick={() => navigate(-1)}
             className='w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow'
@@ -97,17 +98,12 @@ const OfferDetails = () => {
           onClick={toggleFavorite}
           aria-pressed={favorite}
           aria-label={favorite ? 'Remove from favorites' : 'Add to favorites'}
-          className='absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow z-20'
+          className='absolute top-10 right-4 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow z-20'
         >
-          {favorite ? <FavoriteIcon sx={{ color: '#ef4444', fontSize: 24 }} /> : <FavoriteBorderIcon sx={{ color: '#374151', fontSize: 24 }} />}
+          {favorite ? <BookmarkIcon sx={{ color: '#3b82f6', fontSize: 24 }} /> : <BookmarkIcon sx={{ color: '#374151', fontSize: 24 }} />}
         </button>
 
-        {/* Tags on image */}
-        <div className='absolute left-4 top-20 flex gap-2 z-20'>
-          {pkg.tags?.map((t) => (
-            <span key={t} className='bg-white/90 text-xs text-gray-700 px-3 py-1 rounded-full shadow-sm'>{t}</span>
-          ))}
-        </div>
+        
       </div>
 
       {/* Details card content (Overlapping the image) */}

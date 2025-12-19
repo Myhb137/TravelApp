@@ -29,7 +29,7 @@ const TripsPageSearch = () => {
 
   return (
     <div>
-      <main className="bg-blue-600 rounded-b-3xl pb-6 overflow-y-auto  flex-1 overflow-x-hidden">
+      <main className="bg-blue-600 rounded-b-3xl overflow-y-auto  flex-1 overflow-x-hidden">
         {/* SEARCH AREA */}
         <div className="w-full px-4 pt-6 pb-4 bg-blue-600 abolute top-0 z-20">
           <Search
