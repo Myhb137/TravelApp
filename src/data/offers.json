@@ -2,6 +2,7 @@
   "travelPackages": [
     {
       "id": "maldives-paradise-escape",
+      "special": false,
       "title": "Maldives Paradise Escape",
       "location": "Maldives",
       "rating": 4.7,
@@ -25,99 +26,68 @@
         "places": 8,
         "type": "Beach"
       },
-      "description": "Experience the ultimate tropical getaway in the stunning Maldives. This all-inclusive package offers pristine beaches, crystal-clear waters, and world-class accommodations. Enjoy snorkeling, diving, spa treatments, and more.",
-      "amenities": [
-        {
-          "icon": "wifi",
-          "name": "Free WiFi"
-        },
-        {
-          "icon": "breakfast",
-          "name": "Breakfast"
-        },
-        {
-          "icon": "restaurant",
-          "name": "Restaurant"
-        },
-        {
-          "icon": "beach",
-          "name": "Beach Access"
-        },
-        {
-          "icon": "air-conditioning",
-          "name": "Air Conditioning"
-        },
-        {
-          "icon": "pool",
-          "name": "Pool"
-        }
-      ],
+      "description": "A luxury tropical escape with crystal-clear waters, private beaches, and overwater villas.",
       "amenitiesFlags": {
         "wifi": true,
         "breakfast": true,
         "restaurant": true,
+        "pool": true,
         "beachAccess": true,
         "airConditioning": true,
-        "pool": true
+        "spa": true,
+        "transport": true
       },
       "itinerary": [
+        { "day": 1, "title": "Arrival & Welcome", "description": "Transfer to resort and sunset dinner." },
+        { "day": 2, "title": "Island Relaxation", "description": "Beach time and spa session." },
+        { "day": 3, "title": "Ocean Adventure", "description": "Snorkeling and boat tour." }
+      ],
+      "tags": ["Beach", "Luxury"],
+      "available": true
+    },
+    {
+      "id": "uk-study-cambridge",
+      "special": true,
+      "title": "Cambridge Academic Program",
+      "location": "Cambridge, UK",
+      "rating": 5.0,
+      "totalReviews": 12,
+      "images": [
         {
-          "day": 1,
-          "title": "Arrival & Welcome",
-          "description": "Airport transfer and resort check-in"
-        },
-        {
-          "day": 2,
-          "title": "Island Exploration",
-          "description": "Guided tour and water sports"
-        },
-        {
-          "day": 3,
-          "title": "Snorkeling Adventure",
-          "description": "Visit coral reefs and marine life"
-        },
-        {
-          "day": 4,
-          "title": "Spa & Relaxation",
-          "description": "Full day wellness experience"
-        },
-        {
-          "day": 5,
-          "title": "Sunset Cruise",
-          "description": "Romantic dinner on the ocean"
-        },
-        {
-          "day": 6,
-          "title": "Free Day",
-          "description": "Explore at your own pace"
-        },
-        {
-          "day": 7,
-          "title": "Departure",
-          "description": "Check-out and airport transfer"
+          "url": "data:image/jpeg;base64,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",
+          "alt": "Cambridge University building",
+          "isPrimary": true
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Sarah M.",
-          "rating": 5,
-          "comment": "Amazing experience! The resort was beautiful and staff very friendly.",
-          "date": "2024-11-15"
-        },
-        {
-          "id": 2,
-          "author": "John D.",
-          "rating": 5,
-          "comment": "Perfect honeymoon destination. Highly recommend!",
-          "date": "2024-11-10"
-        }
+      "pricing": {
+        "totalPrice": 480000,
+        "currency": "DZD",
+        "pricePerPerson": 480000,
+        "displayTotal": "480,000 dz",
+        "displayPerPerson": "480,000 dz"
+      },
+      "details": {
+        "duration": "15 Days",
+        "places": 10,
+        "type": "Education"
+      },
+      "description": "A prestigious opportunity to study short-term in the UK. Covers language, culture, and academic writing.",
+      "amenitiesFlags": {
+        "wifi": true,
+        "breakfast": true,
+        "libraryAccess": true,
+        "transport": true
+      },
+      "itinerary": [
+        { "day": 1, "title": "Orientation", "description": "Campus tour and student ID setup." },
+        { "day": 2, "title": "First Seminar", "description": "Introduction to British academic standards." }
       ],
-      "tags": ["Beach", "7 Days"],
+      "tags": ["Study", "UK", "Special"],
       "available": true
     },
     {
       "id": "swiss-alps-adventure",
+      "special": false,
       "title": "Swiss Alps Mountain",
       "location": "Switzerland",
       "rating": 4.9,
@@ -141,114 +111,66 @@
         "places": 12,
         "type": "Mountain"
       },
-      "description": "Discover the majestic Swiss Alps with this unforgettable mountain adventure. Experience world-class skiing, charming alpine villages, scenic train rides, and breathtaking mountain views. Perfect for winter sports enthusiasts.",
-      "amenities": [
-        {
-          "icon": "wifi",
-          "name": "Free WiFi"
-        },
-        {
-          "icon": "breakfast",
-          "name": "Breakfast"
-        },
-        {
-          "icon": "ski",
-          "name": "Ski Equipment"
-        },
-        {
-          "icon": "spa",
-          "name": "Mountain Spa"
-        },
-        {
-          "icon": "heating",
-          "name": "Heating"
-        },
-        {
-          "icon": "transport",
-          "name": "Cable Car Pass"
-        }
-      ],
-        "amenitiesFlags": {
-          "wifi": true,
-          "breakfast": true,
-          "skiEquipment": true,
-          "spa": true,
-          "heating": true,
-          "transport": true
-        },
+      "description": "Explore snowy peaks, alpine villages, and unforgettable mountain landscapes.",
+      "amenitiesFlags": {
+        "wifi": true,
+        "breakfast": true,
+        "restaurant": true,
+        "heating": true,
+        "skiEquipment": true,
+        "transport": true
+      },
       "itinerary": [
+        { "day": 1, "title": "Zurich Arrival", "description": "Hotel check-in and city walk." },
+        { "day": 2, "title": "Alpine Train Ride", "description": "Scenic journey through the Alps." },
+        { "day": 3, "title": "Ski & Snow", "description": "Full ski day with instructors." }
+      ],
+      "tags": ["Mountain", "Winter"],
+      "available": true
+    },
+    {
+      "id": "uk-volunteering-london",
+      "special": true,
+      "title": "London Charity Volunteer",
+      "location": "London, UK",
+      "rating": 4.9,
+      "totalReviews": 45,
+      "images": [
         {
-          "day": 1,
-          "title": "Arrival in Zurich",
-          "description": "Airport pickup and transfer to alpine resort"
-        },
-        {
-          "day": 2,
-          "title": "Ski Lessons",
-          "description": "Professional ski instruction for all levels"
-        },
-        {
-          "day": 3,
-          "title": "Mountain Peak Tour",
-          "description": "Cable car to Jungfraujoch - Top of Europe"
-        },
-        {
-          "day": 4,
-          "title": "Free Skiing Day",
-          "description": "Explore the slopes at your own pace"
-        },
-        {
-          "day": 5,
-          "title": "Village Tour",
-          "description": "Visit Grindelwald and Interlaken"
-        },
-        {
-          "day": 6,
-          "title": "Glacier Walk",
-          "description": "Guided glacier hiking experience"
-        },
-        {
-          "day": 7,
-          "title": "Scenic Train Ride",
-          "description": "Glacier Express panoramic journey"
-        },
-        {
-          "day": 8,
-          "title": "Spa & Wellness",
-          "description": "Mountain spa and thermal baths"
-        },
-        {
-          "day": 9,
-          "title": "Final Ski Day",
-          "description": "Last day on the slopes"
-        },
-        {
-          "day": 10,
-          "title": "Departure",
-          "description": "Transfer to Zurich airport"
+          "url": "https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I=",
+          "alt": "Volunteering activities in London",
+          "isPrimary": true
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Michael K.",
-          "rating": 5,
-          "comment": "Incredible skiing and stunning views. Best winter vacation ever!",
-          "date": "2024-12-01"
-        },
-        {
-          "id": 2,
-          "author": "Emma L.",
-          "rating": 5,
-          "comment": "The alpine villages were magical. Highly organized tour.",
-          "date": "2024-11-28"
-        }
+      "pricing": {
+        "totalPrice": 150000,
+        "currency": "DZD",
+        "pricePerPerson": 75000,
+        "displayTotal": "150,000 dz",
+        "displayPerPerson": "75,000 dz"
+      },
+      "details": {
+        "duration": "21 Days",
+        "places": 5,
+        "type": "Volunteering"
+      },
+      "description": "Engage in meaningful community work while improving your English in the heart of London.",
+      "amenitiesFlags": {
+        "wifi": true,
+        "breakfast": true,
+        "transport": true
+        
+      },
+      "itinerary": [
+        { "day": 1, "title": "Meet the Team", "description": "Introduction to the NGO project." },
+        { "day": 2, "title": "Community Outreach", "description": "Visiting local community centers." }
       ],
-      "tags": ["Mountain", "10 Days", "Winter"],
+      "tags": ["Volunteer", "London", "UK"],
       "available": true
     },
     {
       "id": "paris-romantic-getaway",
+      "special": false,
       "title": "Paris Romantic Getaway",
       "location": "Paris, France",
       "rating": 4.8,
@@ -272,293 +194,141 @@
         "places": 2,
         "type": "City"
       },
-      "description": "Fall in love with the City of Light on this romantic Parisian escape. Enjoy intimate dinners, iconic landmarks, world-class museums, charming cafes, and sunset strolls along the Seine. Perfect for couples.",
-      "amenities": [
-        {
-          "icon": "wifi",
-          "name": "Free WiFi"
-        },
-        {
-          "icon": "breakfast",
-          "name": "Continental Breakfast"
-        },
-        {
-          "icon": "restaurant",
-          "name": "Fine Dining"
-        },
-        {
-          "icon": "transport",
-          "name": "Metro Pass"
-        },
-        {
-          "icon": "concierge",
-          "name": "Concierge Service"
-        },
-        {
-          "icon": "champagne",
-          "name": "Welcome Champagne"
-        }
-      ],
+      "description": "A romantic escape through Parisian streets, cafés, and iconic landmarks.",
+      "amenitiesFlags": {
+        "wifi": true,
+        "breakfast": true,
+        "restaurant": true,
+        "airConditioning": true,
+        "transport": true
+      },
       "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival & Eiffel Tower",
-          "description": "Hotel check-in and evening Eiffel Tower visit"
-        },
-        {
-          "day": 2,
-          "title": "Louvre & Latin Quarter",
-          "description": "Museum tour and lunch in historic quarter"
-        },
-        {
-          "day": 3,
-          "title": "Versailles Palace",
-          "description": "Full day trip to Palace of Versailles"
-        },
-        {
-          "day": 4,
-          "title": "Montmartre & Seine Cruise",
-          "description": "Artist district tour and romantic dinner cruise"
-        },
-        {
-          "day": 5,
-          "title": "Shopping & Departure",
-          "description": "Champs-Élysées shopping and airport transfer"
-        }
+        { "day": 1, "title": "Eiffel Tower", "description": "Evening cruise on the Seine." },
+        { "day": 2, "title": "Louvre Museum", "description": "Guided museum tour." },
+        { "day": 3, "title": "Montmartre", "description": "Artistic walk and cafés." }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Sophie R.",
-          "rating": 5,
-          "comment": "Perfect honeymoon! Every moment was magical and romantic.",
-          "date": "2024-11-20"
-        },
-        {
-          "id": 2,
-          "author": "David P.",
-          "rating": 4,
-          "comment": "Beautiful city, great organization. The Seine cruise was unforgettable.",
-          "date": "2024-11-18"
-        }
-      ],
-      "tags": ["City", "5 Days", "Romantic"],
+      "tags": ["City", "Romantic"],
       "available": true
     },
     {
-      "id": "dubai-luxury-experience",
-      "title": "Dubai Luxury Experience",
-      "location": "Dubai, UAE",
-      "rating": 4.6,
-      "totalReviews": 189,
+      "id": "sahara-star-camp-algeria",
+      "special": false,
+      "title": "Sahara Star Camp",
+      "location": "Tamanrasset, Algeria",
+      "rating": 4.9,
+      "totalReviews": 154,
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
-          "alt": "Dubai skyline with Burj Khalifa",
+          "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800",
+          "alt": "Sahara desert night camp",
           "isPrimary": true
         }
       ],
       "pricing": {
-        "totalPrice": 520000,
+        "totalPrice": 95000,
         "currency": "DZD",
-        "pricePerPerson": 130000,
-        "displayTotal": "520,000 dz",
-        "displayPerPerson": "130,000 dz"
+        "pricePerPerson": 47500,
+        "displayTotal": "95,000 dz",
+        "displayPerPerson": "47,500 dz"
+      },
+      "details": {
+        "duration": "3 Days",
+        "places": 4,
+        "type": "Adventure"
+      },
+      "description": "Sleep under the stars and explore the vast Sahara dunes.",
+      "amenitiesFlags": {
+        "breakfast": true,
+        "restaurant": true,
+        "transport": true,
+        "heating": true
+      },
+      "itinerary": [
+        { "day": 1, "title": "Desert Arrival", "description": "4x4 transfer and camp setup." },
+        { "day": 2, "title": "Dune Exploration", "description": "Camel ride and sunset views." }
+      ],
+      "tags": ["Desert", "Adventure", "Special"],
+      "available": true
+    },
+    {
+      "id": "kabylie-nature-escape",
+      "special": false,
+      "title": "Kabylie Nature Escape",
+      "location": "Kabylie, Algeria",
+      "rating": 4.6,
+      "totalReviews": 98,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800",
+          "alt": "Kabylie mountains and forest",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 38000,
+        "currency": "DZD",
+        "pricePerPerson": 19000,
+        "displayTotal": "38,000 dz",
+        "displayPerPerson": "19,000 dz"
+      },
+      "details": {
+        "duration": "2 Days",
+        "places": 3,
+        "type": "Nature"
+      },
+      "description": "Reconnect with nature in the green mountains of Kabylie.",
+      "amenitiesFlags": {
+        "breakfast": true,
+        "restaurant": true,
+        "transport": true
+      },
+      "itinerary": [
+        { "day": 1, "title": "Mountain Hike", "description": "Guided forest hike." },
+        { "day": 2, "title": "Village Visit", "description": "Local culture and food." }
+      ],
+      "tags": ["Nature", "Local"],
+      "available": false
+    },
+    {
+      "id": "tokyo-future-city",
+      "special": false,
+      "title": "Tokyo Future City",
+      "location": "Tokyo, Japan",
+      "rating": 4.8,
+      "totalReviews": 341,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1549693578-d683be217e58?w=800",
+          "alt": "Tokyo night skyline",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 390000,
+        "currency": "DZD",
+        "pricePerPerson": 97500,
+        "displayTotal": "390,000 dz",
+        "displayPerPerson": "97,500 dz"
       },
       "details": {
         "duration": "6 Days",
-        "places": 6,
+        "places": 5,
         "type": "City"
       },
-      "description": "Experience ultimate luxury in the dazzling city of Dubai. Stay in 5-star hotels, visit the world's tallest building, shop in luxury malls, enjoy desert safaris, and indulge in fine dining with stunning views.",
-      "amenities": [
-        {
-          "icon": "wifi",
-          "name": "Free WiFi"
-        },
-        {
-          "icon": "breakfast",
-          "name": "Luxury Breakfast"
-        },
-        {
-          "icon": "pool",
-          "name": "Infinity Pool"
-        },
-        {
-          "icon": "spa",
-          "name": "Premium Spa"
-        },
-        {
-          "icon": "transport",
-          "name": "Private Transfers"
-        },
-        {
-          "icon": "air-conditioning",
-          "name": "Air Conditioning"
-        }
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival & Burj Khalifa",
-          "description": "VIP hotel check-in and sunset at Burj Khalifa"
-        },
-        {
-          "day": 2,
-          "title": "Desert Safari",
-          "description": "Dune bashing, camel riding, and Bedouin dinner"
-        },
-        {
-          "day": 3,
-          "title": "Palm Jumeirah & Beach",
-          "description": "Visit Atlantis and private beach relaxation"
-        },
-        {
-          "day": 4,
-          "title": "Shopping & Dubai Mall",
-          "description": "Luxury shopping and Dubai Aquarium visit"
-        },
-        {
-          "day": 5,
-          "title": "Abu Dhabi Day Trip",
-          "description": "Sheikh Zayed Mosque and Louvre Abu Dhabi"
-        },
-        {
-          "day": 6,
-          "title": "Marina & Departure",
-          "description": "Morning yacht cruise and airport transfer"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Ahmed T.",
-          "rating": 5,
-          "comment": "Absolutely luxurious! Every detail was perfect.",
-          "date": "2024-12-05"
-        },
-        {
-          "id": 2,
-          "author": "Lisa W.",
-          "rating": 4,
-          "comment": "Amazing experience. The desert safari was a highlight!",
-          "date": "2024-12-02"
-        }
-      ],
-      "tags": ["City", "6 Days", "Luxury"],
-      "available": true
-    },
-    {
-      "id": "bali-cultural-journey",
-      "title": "Bali Cultural Journey",
-      "location": "Bali, Indonesia",
-      "rating": 4.5,
-      "totalReviews": 267,
-      "images": [
-        {
-          "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800",
-          "alt": "Bali rice terraces and temples",
-          "isPrimary": true
-        }
-      ],
-      "pricing": {
-        "totalPrice": 220000,
-        "currency": "DZD",
-        "pricePerPerson": 55000,
-        "displayTotal": "220,000 dz",
-        "displayPerPerson": "55,000 dz"
+      "description": "A futuristic journey blending tradition, technology, and modern culture.",
+      "amenitiesFlags": {
+        "wifi": true,
+        "breakfast": true,
+        "restaurant": true,
+        "airConditioning": true,
+        "spa": true,
+        "transport": true
       },
-      "details": {
-        "duration": "8 Days",
-        "places": 10,
-        "type": "Cultural"
-      },
-      "description": "Immerse yourself in Bali's rich culture and natural beauty. Visit ancient temples, explore rice terraces, participate in traditional ceremonies, enjoy Balinese cuisine, and relax on pristine beaches.",
-      "amenities": [
-        {
-          "icon": "wifi",
-          "name": "Free WiFi"
-        },
-        {
-          "icon": "breakfast",
-          "name": "Balinese Breakfast"
-        },
-        {
-          "icon": "pool",
-          "name": "Tropical Pool"
-        },
-        {
-          "icon": "spa",
-          "name": "Traditional Spa"
-        },
-        {
-          "icon": "yoga",
-          "name": "Yoga Classes"
-        },
-        {
-          "icon": "cooking",
-          "name": "Cooking Class"
-        }
-      ],
       "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival in Ubud",
-          "description": "Transfer to boutique resort in cultural heart"
-        },
-        {
-          "day": 2,
-          "title": "Temple Tour",
-          "description": "Visit Tanah Lot and Uluwatu temples"
-        },
-        {
-          "day": 3,
-          "title": "Rice Terrace Trek",
-          "description": "Guided walk through Tegallalang terraces"
-        },
-        {
-          "day": 4,
-          "title": "Cooking Class",
-          "description": "Learn traditional Balinese cuisine"
-        },
-        {
-          "day": 5,
-          "title": "Waterfall Adventure",
-          "description": "Visit sacred waterfalls and jungle"
-        },
-        {
-          "day": 6,
-          "title": "Beach Day in Seminyak",
-          "description": "Relax on beautiful beaches"
-        },
-        {
-          "day": 7,
-          "title": "Traditional Ceremony",
-          "description": "Participate in Balinese blessing ritual"
-        },
-        {
-          "day": 8,
-          "title": "Departure",
-          "description": "Morning spa treatment and airport transfer"
-        }
+        { "day": 1, "title": "Shibuya & Shinjuku", "description": "City lights and nightlife." },
+        { "day": 2, "title": "Tech & Culture", "description": "Akihabara and temples." }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "author": "Rachel H.",
-          "rating": 5,
-          "comment": "Life-changing experience! The culture is so rich and beautiful.",
-          "date": "2024-11-25"
-        },
-        {
-          "id": 2,
-          "author": "Tom S.",
-          "rating": 4,
-          "comment": "Great balance of activities and relaxation. Loved the cooking class!",
-          "date": "2024-11-22"
-        }
-      ],
-      "tags": ["Cultural", "8 Days", "Beach"],
+      "tags": ["City", "Tech"],
       "available": true
     }
   ]

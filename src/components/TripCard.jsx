@@ -1,33 +1,37 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import BookmarkIcon from '@mui/icons-material/Bookmark';
+import BookmarkIcon from '@mui/icons-material/Bookmark'
 
 const TripCard = ({ pkg }) => {
   const favKey = 'travelapp:favorites'
+  if (!pkg) return null
+
+  const isAvailable = pkg.available !== false 
+  const isSpecial = pkg.special == true
+  if (isSpecial) return null
 
   const [favorite, setFavorite] = useState(() => {
     try {
       const raw = localStorage.getItem(favKey)
       const map = raw ? JSON.parse(raw) : {}
-      return Boolean(map && map[pkg?.id])
+      return Boolean(map && map[pkg.id])
     } catch {
       return false
     }
   })
-
-  if (!pkg) return null
 
   const image = pkg.images?.[0]?.url || ''
   const title = pkg.title || 'Untitled'
   const location = pkg.location || ''
   const price = pkg.pricing?.displayTotal || 'N/A'
   const duration = pkg.details?.duration || ''
-  const groupSize = pkg.details?.groupSize || ''
   const type = pkg.details?.type || ''
-  const details = [duration, groupSize, type].filter(Boolean).join(' | ')
+  const details = [duration, type].filter(Boolean).join(' | ')
 
   const toggleFavorite = () => {
+    if (!isAvailable) return 
+    
+
     try {
       const raw = localStorage.getItem(favKey)
       const map = raw ? JSON.parse(raw) : {}
@@ -47,39 +51,59 @@ const TripCard = ({ pkg }) => {
   }
 
   return (
-    <div className="rounded-3xl w-full mb-3 bg-white mx-auto shadow-md overflow-hidden border border-gray-200">
+    <div
+      className={`rounded-3xl w-full mb-3 mx-auto shadow-md overflow-hidden border
+        ${isAvailable ? 'bg-white border-gray-200' : 'bg-gray-100 border-gray-300 opacity-70'}
+      `}
+    >
       <div className="relative">
 
         {image && (
-          <Link to={`/offer/${pkg.id}`} className="block">
+          isAvailable ? (
+            <Link to={`/offer/${pkg.id}`}>
+              <img
+                src={image}
+                alt={pkg.images?.[0]?.alt || title}
+                className="w-full h-60 object-cover"
+              />
+            </Link>
+          ) : (
             <img
               src={image}
               alt={pkg.images?.[0]?.alt || title}
-              className="w-full h-60 object-cover block"
+              className="w-full h-60 object-cover grayscale"
             />
-          </Link>
+          )
+        )}
+
+        {/* Unavailable Badge */}
+        {!isAvailable && (
+          <span className="absolute top-3 left-3 px-3 py-1 text-xs font-semibold text-white bg-red-500 rounded-full">
+            Unavailable
+          </span>
         )}
 
         {/* Favorite Button */}
         <button
           onClick={toggleFavorite}
-          aria-pressed={favorite}
-          aria-label={favorite ? 'Remove from favorites' : 'Add to favorites'}
-          className="absolute top-3 right-3 w-10 h-10 rounded-full flex items-center justify-center bg-white/80 backdrop-blur-sm shadow-sm hover:scale-105 transition-transform"
+          disabled={!isAvailable}
+          className={`absolute top-3 right-3 w-10 h-10 rounded-full flex items-center justify-center
+            ${isAvailable ? 'bg-white/80 hover:scale-105' : 'bg-gray-300 cursor-not-allowed'}
+            transition-transform`}
         >
-          {favorite ? (
-            <BookmarkIcon sx={{ color: '#3b82f6' }} />
-          ) : (
-            <BookmarkIcon sx={{ color: '#6b7280' }} />
-          )}
+          <BookmarkIcon sx={{ color: favorite ? '#3b82f6' : '#6b7280' }} />
         </button>
       </div>
 
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900">
-          <Link to={`/offer/${pkg.id}`} className="hover:underline">
-            {title}
-          </Link>
+          {isAvailable ? (
+            <Link to={`/offer/${pkg.id}`} className="hover:underline">
+              {title}
+            </Link>
+          ) : (
+            <span>{title}</span>
+          )}
         </h3>
 
         <p className="text-sm text-gray-600">{location}</p>

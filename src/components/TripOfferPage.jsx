@@ -10,6 +10,11 @@ import { motion } from 'framer-motion';
 
 const TripOfferPage = () => {
   const { packages = [] } = useFetchPackages()
+  const visiblePackages = packages.filter(
+  pkg => !pkg.special && pkg.available
+)
+
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -143,8 +148,8 @@ const TripOfferPage = () => {
           
           <div className='overflow-x-auto w-full pr-2'>
             <div className='flex w-full gap-4 px-2 pr-1'>
-              {packages.length > 0 ? (
-                packages.map((pkg, index) => (
+              { visiblePackages.length > 0 ? (
+                visiblePackages.map((pkg, index) => (
                   <motion.div 
                     key={pkg.id} 
                     className='flex-shrink-0 w-64 h-fit'
