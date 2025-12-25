@@ -1,22 +1,28 @@
 import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import HomeIcon from '@mui/icons-material/Home'
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff'
 import PersonSharpIcon from '@mui/icons-material/PersonSharp'
 
 const Navbar = () => {
   const location = useLocation()
-  
+  const { t } = useTranslation()
+
   // Pages where navbar should not render
   const hiddenRoutes = [
     '/offer/',
     '/custom-offer',
-    '/all-trips'
+    '/all-trips',
+    '/special-offer',
+    '/activities',
+    '/settings',
+    '/edit-profile'
   ]
-  
+
   // Check if current route should hide navbar
   const shouldHide = hiddenRoutes.some(route => location.pathname.startsWith(route))
-  
+
   if (shouldHide) {
     return null
   }
@@ -54,7 +60,7 @@ const Navbar = () => {
                         : 'text-gray-500 text-xs'
                     }
                   >
-                    
+                    {t('home')}
                   </span>
                 </>
               )}
@@ -83,12 +89,12 @@ const Navbar = () => {
                         : 'text-gray-500 text-xs'
                     }
                   >
-                    
+                    {t('trips')}
                   </span>
                 </>
               )}
             </NavLink>
-            
+
 
             {/* Profile */}
             <NavLink
@@ -113,7 +119,7 @@ const Navbar = () => {
                         : 'text-gray-500 text-xs'
                     }
                   >
-                    
+                    {t('profile')}
                   </span>
                 </>
               )}

@@ -4,9 +4,11 @@ import SpecialOffersCard from './SpecialOffersCard'
 import useFetchPackages from '../hooks/useFetchPackages'
 import Search from './Search'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const HomePage = () => {
   const { packages = [], isLoading, error } = useFetchPackages()
+  const { t } = useTranslation()
   const [query, setQuery] = useState('')
   const [filters, setFilters] = useState({
     duration: '',
@@ -45,21 +47,21 @@ const HomePage = () => {
   return (
     <div className='flex flex-col overflow-x-hidden h-screen w-screen bg-gray-50'>
       <main className='px-4 pb-24 pt-10 overflow-y-auto flex-1'>
-        <Search 
-          value={query} 
-          onChange={setQuery} 
-          placeholder='Search destinations...'
+        <Search
+          value={query}
+          onChange={setQuery}
+          placeholder={t('search_placeholder')}
           filters={filters}
           onFiltersChange={setFilters}
         />
 
-        {isLoading && <div className='text-center py-8'>Loading packages...</div>}
+        {isLoading && <div className='text-center py-8'>{t('loading_packages')}</div>}
         {error && <div className='text-red-500 py-4 text-center'>{error}</div>}
 
         {/* 1. Horizontal Specials Section */}
         {specials.length > 0 && (
           <div className='mt-8'>
-            <h1 className='text-black text-xl font-bold mb-4 px-1'>Exclusive Deals</h1>
+            <h1 className='text-black text-xl font-bold mb-4 px-1'>{t('exclusive_deals')}</h1>
             <div className='flex gap-4 overflow-x-auto no-scrollbar py-2 snap-x'>
               {specials.map((pkg, index) => (
                 <motion.div
@@ -78,9 +80,9 @@ const HomePage = () => {
 
         {/* 2. Vertical Recommended Section */}
         <div className='mt-8'>
-          <h1 className='text-black text-xl font-bold mb-4 px-1'>Recommended for You</h1>
+          <h1 className='text-black text-xl font-bold mb-4 px-1'>{t('recommended_for_you')}</h1>
           {regulars.length === 0 && !isLoading && (
-            <div className='text-center text-gray-400 py-10'>No trips found</div>
+            <div className='text-center text-gray-400 py-10'>{t('no_trips_found')}</div>
           )}
           <div className='grid grid-cols-1 gap-4'>
             {regulars.map((pkg, index) => (

@@ -10,6 +10,10 @@ import "./App.css"
 import Profile from "./components/Profile"
 import CustomOffre from "./components/CustomOffre"
 import Navbar from "./components/Navbar"
+import SpecialOfferpage from "./components/SpecialOfferpage"
+import ActivitiesPage from "./components/ActivitiesPage"
+import SettingsPage from "./components/SettingsPage"
+import EditProfilePage from "./components/EditProfilePage"
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -43,8 +47,8 @@ function App() {
     return (
       <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-[999]">
         <div className="animate-spin-slow">
-          <ExploreOutlinedIcon 
-            sx={{ fontSize: 80, color: "#0046A8" }} 
+          <ExploreOutlinedIcon
+            sx={{ fontSize: 80, color: "#0046A8" }}
             className="drop-shadow-md"
           />
         </div>
@@ -65,6 +69,10 @@ function App() {
           <Route path="/all-trips" element={<AllTripsPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/custom-offer" element={<CustomOffre />} />
+          <Route path="/special-offer" element={<SpecialOfferpage />} />
+          <Route path="/activities" element={<ActivitiesPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/edit-profile" element={<EditProfilePage />} />
         </Routes>
         <Navbar />
       </div>

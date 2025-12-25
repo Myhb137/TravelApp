@@ -38,11 +38,26 @@
         "transport": true
       },
       "itinerary": [
-        { "day": 1, "title": "Arrival & Welcome", "description": "Transfer to resort and sunset dinner." },
-        { "day": 2, "title": "Island Relaxation", "description": "Beach time and spa session." },
-        { "day": 3, "title": "Ocean Adventure", "description": "Snorkeling and boat tour." }
+        {
+          "day": 1,
+          "title": "Arrival & Welcome",
+          "description": "Transfer to resort and sunset dinner."
+        },
+        {
+          "day": 2,
+          "title": "Island Relaxation",
+          "description": "Beach time and spa session."
+        },
+        {
+          "day": 3,
+          "title": "Ocean Adventure",
+          "description": "Snorkeling and boat tour."
+        }
       ],
-      "tags": ["Beach", "Luxury"],
+      "tags": [
+        "Beach",
+        "Luxury"
+      ],
       "available": true
     },
     {
@@ -79,10 +94,22 @@
         "transport": true
       },
       "itinerary": [
-        { "day": 1, "title": "Orientation", "description": "Campus tour and student ID setup." },
-        { "day": 2, "title": "First Seminar", "description": "Introduction to British academic standards." }
+        {
+          "day": 1,
+          "title": "Orientation",
+          "description": "Campus tour and student ID setup."
+        },
+        {
+          "day": 2,
+          "title": "First Seminar",
+          "description": "Introduction to British academic standards."
+        }
       ],
-      "tags": ["Study", "UK", "Special"],
+      "tags": [
+        "Study",
+        "UK",
+        "Special"
+      ],
       "available": true
     },
     {
@@ -121,11 +148,26 @@
         "transport": true
       },
       "itinerary": [
-        { "day": 1, "title": "Zurich Arrival", "description": "Hotel check-in and city walk." },
-        { "day": 2, "title": "Alpine Train Ride", "description": "Scenic journey through the Alps." },
-        { "day": 3, "title": "Ski & Snow", "description": "Full ski day with instructors." }
+        {
+          "day": 1,
+          "title": "Zurich Arrival",
+          "description": "Hotel check-in and city walk."
+        },
+        {
+          "day": 2,
+          "title": "Alpine Train Ride",
+          "description": "Scenic journey through the Alps."
+        },
+        {
+          "day": 3,
+          "title": "Ski & Snow",
+          "description": "Full ski day with instructors."
+        }
       ],
-      "tags": ["Mountain", "Winter"],
+      "tags": [
+        "Mountain",
+        "Winter"
+      ],
       "available": true
     },
     {
@@ -159,13 +201,24 @@
         "wifi": true,
         "breakfast": true,
         "transport": true
-        
       },
       "itinerary": [
-        { "day": 1, "title": "Meet the Team", "description": "Introduction to the NGO project." },
-        { "day": 2, "title": "Community Outreach", "description": "Visiting local community centers." }
+        {
+          "day": 1,
+          "title": "Meet the Team",
+          "description": "Introduction to the NGO project."
+        },
+        {
+          "day": 2,
+          "title": "Community Outreach",
+          "description": "Visiting local community centers."
+        }
       ],
-      "tags": ["Volunteer", "London", "UK"],
+      "tags": [
+        "Volunteer",
+        "London",
+        "UK"
+      ],
       "available": true
     },
     {
@@ -203,11 +256,26 @@
         "transport": true
       },
       "itinerary": [
-        { "day": 1, "title": "Eiffel Tower", "description": "Evening cruise on the Seine." },
-        { "day": 2, "title": "Louvre Museum", "description": "Guided museum tour." },
-        { "day": 3, "title": "Montmartre", "description": "Artistic walk and cafés." }
+        {
+          "day": 1,
+          "title": "Eiffel Tower",
+          "description": "Evening cruise on the Seine."
+        },
+        {
+          "day": 2,
+          "title": "Louvre Museum",
+          "description": "Guided museum tour."
+        },
+        {
+          "day": 3,
+          "title": "Montmartre",
+          "description": "Artistic walk and cafés."
+        }
       ],
-      "tags": ["City", "Romantic"],
+      "tags": [
+        "City",
+        "Romantic"
+      ],
       "available": true
     },
     {
@@ -244,10 +312,22 @@
         "heating": true
       },
       "itinerary": [
-        { "day": 1, "title": "Desert Arrival", "description": "4x4 transfer and camp setup." },
-        { "day": 2, "title": "Dune Exploration", "description": "Camel ride and sunset views." }
+        {
+          "day": 1,
+          "title": "Desert Arrival",
+          "description": "4x4 transfer and camp setup."
+        },
+        {
+          "day": 2,
+          "title": "Dune Exploration",
+          "description": "Camel ride and sunset views."
+        }
       ],
-      "tags": ["Desert", "Adventure", "Special"],
+      "tags": [
+        "Desert",
+        "Adventure",
+        "Special"
+      ],
       "available": true
     },
     {
@@ -283,10 +363,21 @@
         "transport": true
       },
       "itinerary": [
-        { "day": 1, "title": "Mountain Hike", "description": "Guided forest hike." },
-        { "day": 2, "title": "Village Visit", "description": "Local culture and food." }
+        {
+          "day": 1,
+          "title": "Mountain Hike",
+          "description": "Guided forest hike."
+        },
+        {
+          "day": 2,
+          "title": "Village Visit",
+          "description": "Local culture and food."
+        }
       ],
-      "tags": ["Nature", "Local"],
+      "tags": [
+        "Nature",
+        "Local"
+      ],
       "available": false
     },
     {
@@ -325,10 +416,202 @@
         "transport": true
       },
       "itinerary": [
-        { "day": 1, "title": "Shibuya & Shinjuku", "description": "City lights and nightlife." },
-        { "day": 2, "title": "Tech & Culture", "description": "Akihabara and temples." }
+        {
+          "day": 1,
+          "title": "Shibuya & Shinjuku",
+          "description": "City lights and nightlife."
+        },
+        {
+          "day": 2,
+          "title": "Tech & Culture",
+          "description": "Akihabara and temples."
+        }
       ],
-      "tags": ["City", "Tech"],
+      "tags": [
+        "City",
+        "Tech"
+      ],
+      "available": true
+    },
+    {
+      "id": "algiers-casbah-tour",
+      "special": false,
+      "title": "Casbah Heritage Walk",
+      "location": "Algiers, Algeria",
+      "rating": 4.8,
+      "totalReviews": 180,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1547926838-8959d9f10a12?w=800",
+          "alt": "Algiers Casbah narrow streets",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 4000,
+        "currency": "DZD",
+        "pricePerPerson": 4000,
+        "displayTotal": "4,000 dz",
+        "displayPerPerson": "4,000 dz"
+      },
+      "details": {
+        "duration": "4 Hours",
+        "places": 15,
+        "type": "Culture"
+      },
+      "description": "Discover the ancient history and winding streets of the UNESCO-listed Casbah of Algiers.",
+      "amenitiesFlags": {
+        "transport": false,
+        "breakfast": false
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Casbah Tour",
+          "description": "Guided walking tour."
+        }
+      ],
+      "tags": [
+        "Culture",
+        "History",
+        "Algiers",
+        "Activity"
+      ],
+      "available": true
+    },
+    {
+      "id": "constantine-bridges-hike",
+      "special": false,
+      "title": "Constantine Bridges Hike",
+      "location": "Constantine, Algeria",
+      "rating": 4.9,
+      "totalReviews": 210,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1629737180425-45811776d542?w=800",
+          "alt": "Constantine suspension bridge",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 6000,
+        "currency": "DZD",
+        "pricePerPerson": 6000,
+        "displayTotal": "6,000 dz",
+        "displayPerPerson": "6,000 dz"
+      },
+      "details": {
+        "duration": "5 Hours",
+        "places": 10,
+        "type": "Adventure"
+      },
+      "description": "Explore the City of Bridges with a scenic hike and breathtaking views.",
+      "amenitiesFlags": {
+        "transport": true,
+        "breakfast": true
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Bridge Walk",
+          "description": "Walking across the famous bridges."
+        }
+      ],
+      "tags": [
+        "Adventure",
+        "Constantine",
+        "Activity"
+      ],
+      "available": true
+    },
+    {
+      "id": "oran-fort-santa-cruz",
+      "special": false,
+      "title": "Fort Santa Cruz Visit",
+      "location": "Oran, Algeria",
+      "rating": 4.7,
+      "totalReviews": 150,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1632832873132-7201889c0957?w=800",
+          "alt": "Santa Cruz Fort view",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 5000,
+        "currency": "DZD",
+        "pricePerPerson": 5000,
+        "displayTotal": "5,000 dz",
+        "displayPerPerson": "5,000 dz"
+      },
+      "details": {
+        "duration": "3 Hours",
+        "places": 20,
+        "type": "History"
+      },
+      "description": "Visit the historic Fort Santa Cruz and enjoy panoramic views of Oran.",
+      "amenitiesFlags": {
+        "transport": true,
+        "breakfast": false
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Fort Visit",
+          "description": "Guided historical tour."
+        }
+      ],
+      "tags": [
+        "History",
+        "Oran",
+        "Activity"
+      ],
+      "available": true
+    },
+    {
+      "id": "taghit-dune-skiing",
+      "special": false,
+      "title": "Taghit Dune Skiing",
+      "location": "Taghit, Algeria",
+      "rating": 5.0,
+      "totalReviews": 95,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=800",
+          "alt": "Sand dunes in Taghit",
+          "isPrimary": true
+        }
+      ],
+      "pricing": {
+        "totalPrice": 8500,
+        "currency": "DZD",
+        "pricePerPerson": 8500,
+        "displayTotal": "8,500 dz",
+        "displayPerPerson": "8,500 dz"
+      },
+      "details": {
+        "duration": "4 Hours",
+        "places": 8,
+        "type": "Desert"
+      },
+      "description": "Experience the thrill of sand skiing on the golden dunes of Taghit.",
+      "amenitiesFlags": {
+        "transport": true,
+        "breakfast": true
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Sand Skiing",
+          "description": "Equipment rental and instruction."
+        }
+      ],
+      "tags": [
+        "Desert",
+        "Adventure",
+        "Activity"
+      ],
       "available": true
     }
   ]
